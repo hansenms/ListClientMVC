@@ -18,11 +18,7 @@ namespace ListClientMVC.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
-
-            string accessToken = Request.Headers["x-ms-token-aad-access-token"];
-
-            ViewData["AccessToken"] = accessToken;
-            
+                                    
             return View();
         }
 
